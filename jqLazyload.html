@@ -10,7 +10,7 @@
             padding: 0; 
         }
         img{
-            width: 100%;
+            width: 1500px;
             height: 500px; 
             border: 1px solid #ccc;
         }
@@ -28,17 +28,14 @@
         <img data-original="images/1.jpeg" src="" alt="图片" class="lazy" />
         <img data-original="images/1.jpeg" src="" alt="图片" class="lazy" />
         <img data-original="images/1.jpeg" src="" alt="图片" class="lazy" />
-        <img data-original="images/1.jpeg" src="" alt="图片" class="lazy" />
-        <img data-original="images/1.jpeg" src="" alt="图片" class="lazy" />
-        <img data-original="images/1.jpeg" src="" alt="图片" class="lazy" />
-        <img data-original="images/1.jpeg" src="" alt="图片" class="lazy" />
     </div>
 
 <script src="jquery.js"></script>
+<script src="jquery.lazyload.js"></script>
 <script>
-    $(function() {
-     　　$("img.lazy").lazyload();  //叫lazy这个名字的img标签就都被懒加载了
-　　　　})
+  $(function() {
+    $("img.lazy").lazyload();
+});
 </script>
 </body>
 </html>
